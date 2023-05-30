@@ -15,7 +15,7 @@ while (counter < 3) {
 
     let player  = 0
     let computer = 0
-    player = prompt("Choose: Rock 1" + icons[0] + " Paper 2"  + icons[1] + " or Scissors 3" + icons[2] + "\n" + "You: " + "🟢".repeat(counter_player) + " Computer: " + "🔴".repeat(counter_computer))
+    player = prompt("Choose: Rock 1" + icons[0] + " Paper 2"  + icons[1] + " or Scissors 3" + icons[2] + "\n SCORE \n" + "You: " + "🟢".repeat(counter_player) + " Computer: " + "🔴".repeat(counter_computer))
     computer = random(1, 3)
     //alerts PLAYER and COMPUTER
     alert(anouncer("You", player - 1))
