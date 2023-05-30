@@ -33,4 +33,5 @@ cd your-repository
 3 Configure the configuration files according to your needs if you want it.
 
 4 Run the 'start.sh' script to automate the creation of the Docker image and container, as well as obtaining the .onion URL:
+```bash
 ./start.sh
