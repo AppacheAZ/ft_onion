@@ -25,13 +25,18 @@ Before running the project, makes sure you have the following requirements met:
 ## USAGE INSTRUCTIONS
 
 1 Clone the repository to your local machine:
+```bash
 git clone 
 
 2 Navigate to the project directory:
+```bash
 cd your-repository
 
 3 Configure the configuration files according to your needs if you want it.
+*'nginx.conf'
+*'torrc'
 
-4 Run the 'start.sh' script to automate the creation of the Docker image and container, as well as obtaining the .onion URL:
+4 Run the 'start.sh' script to automate the creation of the Docker image and container, as well as obtaining the .onion URL(remember that the docker daemon is enabled):
+This script will remove all the containers with the name 'pruebanginx' and create a new with the same name
 ```bash
 ./start.sh
