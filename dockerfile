@@ -12,11 +12,17 @@ COPY html /var/www/html
 COPY torrc /etc/tor
 
 EXPOSE 80
+EXPOSE 4242
 
 #CMD ["nginx", "-g", "daemon off;"]
 
 # Start Tor and Nginx
-CMD service tor start && nginx -g "daemon off;"
+#CMD service tor start && nginx -g "daemon off;"
+
+# Configure
+COPY /scripts/services.sh services.sh
+RUN chmod 700 services.sh
+CMD ./services.sh
 
 #apt update
 #apt install tor
