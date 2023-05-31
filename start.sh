@@ -1,4 +1,4 @@
-cat ~/.ssh/id_rsa.pub > scripts/id_rsa.pub
+#cat ~/.ssh/id_rsa.pub > scripts/id_rsa.pub
 docker stop pruebanginx
 docker rm pruebanginx
 docker build -t prueba .
