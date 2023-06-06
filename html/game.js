@@ -9,14 +9,14 @@ function game(){
         }
         function anouncer(subject, object) {
             if (player >= 1 || player <= 3)
-                return subject + " " + "choose" + " " + icons[object];
+                return subject + " " + "choose" + " " + icons[object] + "\n \n \n \n \/ Dont close this window to continue playing";
             else 
                 return "You choose an invalid option"
         }
 
         let player  = 0
         let computer = 0
-        player = prompt("Choose: Rock 1" + icons[0] + " Paper 2"  + icons[1] + " or Scissors 3" + icons[2] + "\n SCORE \n" + "You: " + "🟢".repeat(counter_player) + " Computer: " + "🔴".repeat(counter_computer))
+        player = prompt("Choose: Rock 1" + icons[0] + " Paper 2"  + icons[1] + " or Scissors 3" + icons[2] + "\n SCORE \n" + "You: " + "🟢".repeat(counter_player) + " Computer: " + "🔴".repeat(counter_computer) + "\n Dont close this window to continue playing")
         computer = random(1, 3)
         //alerts PLAYER and COMPUTER
         alert(anouncer("You", player - 1))
@@ -42,10 +42,12 @@ function game(){
             if (counter_player > counter_computer){
                 document.getElementById("result").innerHTML = "🥳🤩🤑🏆🤑🤩🥳"
                 document.getElementById("result").innerHTML = "🥇You win the game🥇"
+                document.getElementById("subtitle").innerHTML = "Congratulations! You win the game!"
             }
             else {
                 document.getElementById("title").innerHTML = "🤣😢😭😭😭😭😭😭😭"
                 document.getElementById("result").innerHTML = "🤖Computer win the game!🌐"
+                document.getElementById("subtitle").innerHTML = "Try again restarting the page!!!"
             } 
         }
     }
