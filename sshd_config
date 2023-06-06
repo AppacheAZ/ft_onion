@@ -31,7 +31,7 @@ ListenAddress ::
 # Authentication:
 
 LoginGraceTime 2m
-PermitRootLogin no
+PermitRootLogin no #This is the line that prevents root login via SSH (is a good practice)
 StrictModes yes
 MaxAuthTries 2
 #MaxSessions 10
@@ -83,7 +83,7 @@ ChallengeResponseAuthentication no
 # If you just want the PAM account and session checks to run without
 # PAM authentication, then enable this but set PasswordAuthentication
 # and ChallengeResponseAuthentication to 'no'.
-UsePAM yes
+UsePAM yes #This is the line that enables PAM authentication potentially extra security
 
 #AllowAgentForwarding yes
 #AllowTcpForwarding yes
