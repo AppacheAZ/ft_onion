@@ -26,7 +26,7 @@ Before running the project, makes sure you have the following requirements met:
 
 1 Clone the repository to your local machine:
 ```bash
-git clone 
+git clone''' 
 
 2 Navigate to the project directory:
 ```bash
