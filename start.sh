@@ -23,6 +23,7 @@ EOF
 
 echo "\n \n \033[0mThe Onion URL of the page is:"
 onion_url=$(docker exec -it pruebanginx /bin/bash -c "cat /var/lib/tor/hidden_service/hostname")
+chmod 440 scripts/id_rsa
 echo "\033[35m$onion_url\033[0m"
 echo "\n"
 docker exec -it pruebanginx /bin/bash -c "service ssh restart"

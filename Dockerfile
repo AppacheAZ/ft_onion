@@ -17,7 +17,6 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY html /var/www/html
 COPY torrc /etc/tor
 
-EXPOSE 80
 EXPOSE 4242
 
 # Start Tor and Nginx services using the services script
